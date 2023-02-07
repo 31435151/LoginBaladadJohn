@@ -12,16 +12,18 @@
     <body>
         <form>
             <fieldset align="center">
-                    <legend>Login</legend>
-                    Username: 
-                    <input type =  "text" size="30" />
-                    <br>
-                    Password:
-                    <input type = "text" size="30"/>
-                    <br>
-                    <button>Login</button><button href="www.google.com">Back</button>
-                    <br>
+                <legend>Login</legend>
+                Username: 
+                <input type = "email" size="30" />
+                <br>
+                Password:
+                <input type="password" id="pwd" name="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Password should be a minimum of 8 characters, aplhanumeric with at least one special character.">
+                <br>
+                <input type="submit" value="Login" size="30"><input type="button" value="Cancel" size="30">
+                <br>
             </fieldset>
+
+
         </form>
     </body>
 </html>
